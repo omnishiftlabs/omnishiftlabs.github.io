@@ -1,20 +1,9 @@
-# Developer website (GitHub Pages)
+# OmniShift Labs website
 
-Contents of this folder are published as the OmniShift Studios developer site at
-**https://omnishiftstudios.github.io** (user-site repo `omnishiftstudios/omnishiftstudios.github.io`, branch `main`).
+Published at https://omnishiftlabs.github.io/ from omnishiftlabs/omnishiftlabs.github.io, main branch / root, using GitHub Pages Free.
 
-Why it exists: AdMob requires `https://<developer-website-root>/app-ads.txt` to
-authorise ad sellers. The Play listing's "Website" field must point at this domain.
+The original https://omnishiftstudios.github.io/ remains live. Do not rename or delete it: existing game privacy-policy and advertising links depend on it.
 
-- `app-ads.txt` — AdMob publisher authorisation (`pub-2017450468818575`). Must stay at the site root.
-- `index.html` — landing page (Play link, privacy policy, contact).
-- `sort-spectrum/privacy.html` — copy of `../privacy-policy.html`.
+Both privacy-policy documents and app-ads.txt were copied byte-for-byte from the original website on 21 October 2026. Existing publisher identity inside those policies is intentionally retained; the YouTube/website brand rename does not change Play publisher settings or data practices. Support email remains omnishiftstudios@gmail.com.
 
-## Publishing changes
-
-```bash
-git clone git@github.com:omnishiftstudios/omnishiftstudios.github.io.git /tmp/site
-cp -r store-assets/site/. /tmp/site/ && cd /tmp/site && git add -A && git commit -m "Update site" && git push
-```
-
-After changing `app-ads.txt`: AdMob → Apps → app-ads.txt → "Check for updates" (crawl takes up to 24 h).
+app-ads.txt must remain at the site root. Update store website links only after verifying the new deployment. Keep old policy addresses available for installed game versions.
